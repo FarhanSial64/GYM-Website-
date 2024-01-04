@@ -1,0 +1,150 @@
+.login{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin: 139px 90px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.login form{
+    position: absolute;
+    inset: 4px;
+    background-color: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.login form h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 36px;
+
+}
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 10;
+
+}
+.inputbox label{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: grey;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.login form .inputbox input:valid ~ label,
+.login form .inputbox input:focus ~ label
+{
+    color: white;
+    font-size: 13px;
+    transform: translateY(-34px);
+}
+
+.inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.login form .inputbox input:valid ~ i,
+.login form .inputbox input:focus ~ i{
+    height: 44px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    margin: 10px 0px;
+    font-size: 13px;
+    color: grey;
+    text-decoration: none;
+}
+.links a:hover{
+    color: whitesmoke;
+}
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 101.5%; 
+    margin-top: 15px;
+}
+.login input[type="submit"]:hover{
+    transform: scale(1.05);
+    background-color: #66bfc5;
+    transition: 0.5s;
+    color: white;
+}
+
+/* Animation  */
+.login::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg ,transparent, #45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+}
+.login::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg ,transparent, red,red,red);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

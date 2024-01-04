@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../Pictures/banner2.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    font-family: 'Lato' , sans-serif;
+}
+.container{
+    display: block;
+    margin: auto;
+    width: 100%;
+    /* background-color: green; */
+}
+.container .text
+{
+    display: block;
+    text-align: center;
+    width: 30%;
+    font-size: 56px;
+    font-weight: bolder;
+    /* background-color: aqua; */
+}
+.container .text p{
+    font-style: italic;
+}
+.offer{
+    margin-top: 18.1%;
+    width: 100%;
+    background-color: #1E2123;
+    height: 705px;
+}
+.offer .heading {
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 4%;
+}
+.box{
+    margin-top: 2%;
+    padding: 20px;
+    display: inline-block;
+    width: 32.5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: 0.5;
+}
+.box h3{
+    margin-top: 10px;
+}
+.box p{
+    margin-top: 2px;
+    font-style: italic;
+}

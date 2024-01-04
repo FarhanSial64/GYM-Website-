@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Pictures/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <title>Fitness - Contact</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><h1><span>Fit</span> N <span>Fine</span></h1></a>    
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us </a></li>
+                <li><a href="./facilty.html">Facilities</a></li>
+                <li><a href="./contact.html">Contact US</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                      <a href="#item1">Voice Input</a>
+                      <a href="#item2">Voice Output</a>
+                      <a href="#item3">Help</a>
+                    </div>
+                </div>
+                <button type="button"><a href="./login.html">Log Out</a></button>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact">
+             <form action="./login.html">
+                 <h2>Contact US</h2>
+                 <div class="inputbox">
+                     <input type="text" name="name" id="name" required="required">
+                     <label for="name">Name</label>
+                     <i></i>
+                 </div>
+                 <div class="inputbox">
+                     <input type="text" name="email" id="email" required="required">
+                     <label for="email">Email</label>
+                     <i></i>
+                 </div>
+                 <div class="inputbox">
+                     <!-- <input type="text" name="number" id="number" required="required"> -->
+                     <textarea name="message" id="" cols="30" rows="10"></textarea>
+                     <label for="number">Enter Message</label>
+                     <i></i>
+                 </div>
+                 <input type="submit" value="Send">
+             </form>
+        </div>
+     </div>
+</body>
+</html>
